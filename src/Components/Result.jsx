@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import styles from "../Styles/Result.module.css";
 
 const Result = () => {
   const location = useLocation();
   const navigate = useNavigate();
-
+  // const [rank ,setrank] =useState(["na","na"]);
   const { score, attempted, unattempted, correct, incorrect, accuracy, timeTaken, pm, len } = location.state;
-  let progress = (score / len) * pm * 100;
-  let rank = progress >= 90 ? ["Warlord", "👑"] : progress >= 60 ? ["Vanguard", "🎖️"] : ["Recruited", "🔰"];
+  let p=Number(pm);
+  let l=Number(len);
+
+  let progress = (score ) /( p*l) * 100;
+
+  
+   let rank=(progress >= 90 ? ["Warlord", "👑"] : progress >= 60 ? ["Vanguard", "🎖️"] : ["Recruited", "🔰"]
+   )
 
   const formatTime = (timeInMillis) => {
     const minutes = Math.floor(timeInMillis / 60000);
