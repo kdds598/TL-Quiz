@@ -13,8 +13,11 @@ const Result = () => {
   let progress = (score ) /( p*l) * 100;
 
   
-   let rank=(progress >= 90 ? ["Warlord", "👑"] : progress >= 60 ? ["Vanguard", "🎖️"] : ["Recruited", "🔰"]
-   )
+  let rank = 
+  progress >= 90 ? ["Warlord", "👑"] : 
+  progress >= 60 ? ["Vanguard", "🎖️"] : 
+  progress >= 30 ? ["Recruited", "🔰"] : 
+  ["Novice", "⚪"]; 
 
   const formatTime = (timeInMillis) => {
     const minutes = Math.floor(timeInMillis / 60000);
