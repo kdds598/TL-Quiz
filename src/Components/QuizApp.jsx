@@ -99,7 +99,7 @@ const Quiz = () => {
               accuracy,
               pm:quizData.correct_answer_marks,
               len:quizData.questions.length,
-              timeTaken: elapsedTime, 
+              timeTaken: elapsedTime, // Pass time taken in milliseconds
             },
           });
     }
