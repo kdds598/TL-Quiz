@@ -18,7 +18,7 @@ Follow these steps to run the project locally:
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone <your-repo-link-here>
+git clone https://github.com/kdds598/TL-Quiz.git
 cd <your-project-folder>
 ```
 
