@@ -1,8 +1,43 @@
-# React + Vite
+# Quiz Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Live Demo
+[Live Quiz App](https://tl-quiz-fa7j.vercel.app/)
 
-Currently, two official plugins are available:
+## 📌 About the Project
+This is a React-based quiz application where users can attempt quizzes dynamically fetched from an API. It features a loading spinner, error handling, and a responsive interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Features
+- Dynamic quiz fetching from an API
+- Responsive design for mobile & desktop
+- Loading spinner for a smooth user experience
+- Error handling for API failures
+- Context API for state management
+
+## 🔧 Installation & Setup
+Follow these steps to run the project locally:
+
+### 1️⃣ Clone the Repository
+```sh
+git clone <your-repo-link-here>
+cd <your-project-folder>
+```
+
+### 2️⃣ Install Dependencies
+```sh
+npm install
+```
+
+### 3️⃣ Run the Development Server
+```sh
+npm run dev
+```
+Then open `http://localhost:5173/` in your browser (for Vite projects).
+
+## 🛠️ Built With
+- React.js
+- Vite.js
+- Axios
+- React Context API
+- React Loader Spinner
+  
+
