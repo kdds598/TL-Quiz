@@ -34,20 +34,8 @@ export const QuizProvider = ({ children }) => {
   return (
     <QuizContext.Provider value={{ quizData, loading, error }}>
       {loading ? (
-         <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            backgroundColor: '#f0f0f0',
-          }}>
-            <Oval 
-              strokeColor="#0000FF" // Blue color for the spinner lines
-              strokeWidth="5"       // Width of the spinner lines
-              animationDuration="0.75" // Speed of rotation
-              width="100"           // Width of the spinner
-              visible={true}        // Controls whether the spinner is visible or not
-            />
+         <div>       
+            Loading...
         </div> 
       ) : error ? (
         <div>{error}</div> 
