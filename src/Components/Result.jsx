@@ -38,7 +38,7 @@ const Result = () => {
           {/* Left side content */}
           <div style={{ flex: 1 }}>
             <p>Time Taken: {formatTime(timeTaken)}</p>
-            <p>Score: {score}</p>
+            <p>Score: {score}/{p*l}</p>
             <p>Attempted: {attempted}</p>
             <p>Unattempted: {unattempted}</p>
             <p>Correct: {correct}</p>
